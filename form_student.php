@@ -13,12 +13,8 @@
     <p>父</p>姓名: <input name="dad_name">
     <p>母</p>姓名: <input name="mom_name">
     <hr>
-    <label for="help_money"">申請補助種類</label>
-    <select id="help_money">
-        <option value="1">低收入戶</option>
-        <option value="2">中低收入戶</option>
-        <option value="3">家庭突發因素</option>
-    </select>
+    申請補助種類: <br><input name="support_type"><br>1.低收入戶 <br>2.中低收入戶 <br>3.家庭突發因素
+    <hr>
     <br>
     <input type="submit" name="Submit" value="送出"/>
 </body>
