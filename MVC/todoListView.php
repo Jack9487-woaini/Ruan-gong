@@ -69,7 +69,16 @@ if (! $result) {
         echo "<td>" , $rs['sID'], "</td>";
         echo "<td>" , $rs['father'], "</td>";
         echo "<td>" , $rs['mother'], "</td>";
-        echo "<td>" , $rs['family_status'], "</td>";
+        if ($rs['family_status'] == 1){
+            echo "<td> 低收入戶 </td>";
+        }else if ($rs['family_status'] == 2){
+            echo "<td> 中低收入戶 </td>";
+        }else if ($rs['family_status'] == 3){
+            echo "<td> 家庭突發因素 </td>";
+        }else{
+            echo "<td>" , $rs['family_status'], "</td>";
+        }
+        
         echo "<td>" , $rs['mentor_comment'], "</td>";
         echo "<td>" , $rs['mentor_sign'], "</td>";
         if ($rs['secretary_verify']>0){
