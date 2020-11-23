@@ -30,7 +30,8 @@ while ($rs = mysqli_fetch_array($result)) {
 <body>
 <h1>申請表</h1>
 <form method="post" action="Updateform.php">
-    <input name="id" type="id" value=<?php echo $id;?>>
+
+    
     <h1>貧困學生補助經費申請表</h1>
     申請人（學生）:<input name="student" type="student" id="student" value =<?php echo $student;?> readonly="readonly">
     學號:<input name="sid" type="sid" id="sid" value =<?php echo $sid;?> readonly="readonly"><hr>
